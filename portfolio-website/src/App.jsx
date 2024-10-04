@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <div className='h-screen bg-green-700 text-white'>
+      <div className='min-h-screen bg-green-700 text-white'>
         <div className="flex flex-row justify-center mx-auto w-full max-w-5xl">
           <div className="flex flex-col justify-start w-3/5 mt-40 px-6">
             <h1 className="text-4xl font-bold">Evangelos Kontonotas</h1>
@@ -15,7 +15,7 @@ function App() {
           </div>
           <div className="w-2/5 mt-48 px-6">
             <div>
-              <p className="text-left overflow-auto">
+              <p className="text-l text-left overflow-auto">
                 <section>
                   After initially pursuing Mechanical Engineering, I discovered my passion for coding and took a leap, 
                   switching universities to study Computer Science. Today, I'm a Computer Science graduate who has 
