@@ -1,4 +1,5 @@
-import Sidebar from "./Sidebar"
+import Sidebar from "./Components/Sidebar"
+import Card from "./Components/Card"
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
           <div className="flex flex-col justify-start w-3/5 mt-40 px-6">
             <Sidebar/>
           </div>
-          <div className="w-2/5 mt-48 px-6">
+          <div className="w-2/5 mt-48 px-6 mb-36">
             <div>
               <p className="text-l text-left overflow-auto">
                 <section>
@@ -33,21 +34,35 @@ function App() {
                 </section>
               </p>
             </div>
-            <div className="mt-48">
+            <div className="mt-24">
               <nav>
                   <ol>
-                    <li>Experience 1</li>
-                    <li>Experience 2</li>
-                    <li>Experience 3</li>
+                    <Card 
+                      date="2022-2024" 
+                      title="Software Engineer" 
+                      description="Wrote some software" 
+                    />
                   </ol>
               </nav>
             </div>
-            <div className="mt-48">
+            <div className="mt-24">
               <nav>
                   <ol>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
-                    <li>Project 3</li>
+                    <Card 
+                      date="Oct 2024" 
+                      title="Saverr" 
+                      description="app for keeping track of savings"
+                    />
+                    <Card 
+                      date="May 2024" 
+                      title="KnightroGrade"  
+                      description="code submission and grading tool"
+                    />
+                    <Card 
+                      date="Aug 2023" 
+                      title="Between Shows" 
+                      description="letterboxd thingy "
+                    />
                   </ol>
               </nav>
             </div>
