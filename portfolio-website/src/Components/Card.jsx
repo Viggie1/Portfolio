@@ -2,15 +2,16 @@
 function Card(props) {
 
     return (
-        <div className="flex flex-row">
-            <div>
+        <div className="flex flex-row w-full">
+            <div className="w-1/4 text-md">
                 <p className="text-md">{props.date}</p>
             </div>
-            <div className="pl-10">
-                <h1 className="text-xl">{props.title}</h1>
-                <p>{props.description}</p>
+            <div className="w-3/5">
+                <h1 className="text-2xl">{props.title}</h1>
+                <h1 className="text-xs">{props?.company}</h1>
+                <p className="pt-2">{props.description}</p>
                 <ul>
-                    <li>React.js</li>
+                    <li className="pt-2">React.js</li>
                     <li>JavaScript</li>
                     <li>AWS</li>
                 </ul>
