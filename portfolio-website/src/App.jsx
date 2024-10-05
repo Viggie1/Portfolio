@@ -7,12 +7,12 @@ function App() {
     <>
       <div className='min-h-screen bg-green-700 text-white'>
         <div className="flex flex-row justify-center mx-auto w-full max-w-7xl">
-          <div className="flex flex-col justify-start w-3/5 mt-40">
+          <div className="flex flex-col justify-start w-2/5 mt-40">
             <Sidebar/>
           </div>
           <div className="w-3/5 mt-48 mb-36">
             <div>
-              <p className="text-l text-left overflow-auto">
+              <p className="text-lg text-left overflow-auto">
                 <section>
                   After initially pursuing Mechanical Engineering, I discovered my passion for coding and took a leap, 
                   switching universities to study Computer Science. Today, I'm a Computer Science graduate who has 
@@ -49,9 +49,13 @@ function App() {
                                     customization requests and ensuring functionality met their needs. My role spanned 
                                     developing both frontend and backend solutions for a variety of educational tools.
                                     " 
+                      technologies={["JavaScript", "React.js", "HTML"]}
                     />
                   </ol>
               </nav>
+            </div>
+            <div className="pt-10">
+              <p>View Full <a href="https://www.google.com" target="_blank" className="underline">Resume</a></p>
             </div>
             <div className="mt-24">
               <nav>
@@ -61,6 +65,7 @@ function App() {
                         date="Oct 2024" 
                         title="Saverr" 
                         description="app for keeping track of savings"
+                        technologies={["JavaScript", "React.js", "HTML"]}
                       />
                     </li>
                     <li className="pt-10">
@@ -68,6 +73,7 @@ function App() {
                         date="May 2024" 
                         title="KnightroGrade"  
                         description="code submission and grading tool"
+                        technologies={["JavaScript", "React.js", "HTML"]}
                       />
                     </li>
                     <li className="pt-10">
@@ -75,6 +81,7 @@ function App() {
                         date="Aug 2023" 
                         title="Between Shows" 
                         description="letterboxd thingy "
+                        technologies={["JavaScript", "React.js", "HTML"]}
                       />
                     </li>
                   </ol>
