@@ -1,16 +1,38 @@
 import Sidebar from "./Components/Sidebar"
 import Card from "./Components/Card"
+import { useRef, useEffect } from "react"
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  const aboutRef = useRef(null);
+  const expRef = useRef(null);
+  const projRef = useRef(null);
+
+  const scrollToSection = (ref, offset = 50) => {
+    const topPosition = ref.current.getBoundingClientRect().top + window.scrollY - offset; 
+    console.log(topPosition)
+    if(ref && ref.current) {
+      window.scrollTo({ top: topPosition, behavior: 'smooth' })
+    }
+  }
 
   return (
     <>
       <div className='min-h-screen bg-green-700 text-white'>
         <div className="flex flex-row justify-center mx-auto w-full max-w-7xl">
           <div className="flex flex-col justify-start w-2/5 mt-40">
-            <Sidebar/>
+            <Sidebar
+              aboutRef={aboutRef} 
+              expRef={expRef}
+              projRef={projRef}
+              scrollToSection={scrollToSection}
+            />
           </div>
-          <div className="w-3/5 mt-48 mb-36">
+          <div className="w-3/5 mt-48 mb-36" ref={aboutRef}>
             <div>
               <p className="text-lg text-left overflow-auto">
                 <section>
@@ -34,7 +56,7 @@ function App() {
                 </section>
               </p>
             </div>
-            <div className="mt-24">
+            <div className="mt-24" ref={expRef}>
               <nav>
                   <ol>
                     <Card 
@@ -57,7 +79,7 @@ function App() {
             <div className="pt-10">
               <p>View Full <a href="https://www.google.com" target="_blank" className="underline">Resume</a></p>
             </div>
-            <div className="mt-24">
+            <div className="mt-24" ref={projRef}>
               <nav>
                   <ol>
                     <li className="pt-2">
