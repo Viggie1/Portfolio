@@ -72,6 +72,7 @@ function App() {
                                     developing both frontend and backend solutions for a variety of educational tools.
                                     " 
                       technologies={["JavaScript", "React.js", "HTML"]}
+                      link={'https://techrangers.cdl.ucf.edu/'}
                     />
                   </ol>
               </nav>

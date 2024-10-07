@@ -8,10 +8,31 @@ function Sidebar({ aboutRef, expRef, projRef, scrollToSection }) {
             <div className="sticky top-44">
                 <h1 className="text-4xl font-bold">Evangelos Kontonotas</h1>
                 <p className="text-2xl pt-2 pb-8">Software Engineer</p>
-                <ul>
-                    <li className="pb-2" ><button onClick={() => {scrollToSection(aboutRef)}}>About</button></li>
-                    <li className="pb-2" ><button onClick={() => {scrollToSection(expRef)}}>Experience</button></li>
-                    <li className="pb-2"><button onClick={() => {scrollToSection(projRef)}}>Projects</button></li>
+                <ul className="text-lg">
+                    <li className="pb-2">
+                        <button 
+                            className="hover:translate-x-8" 
+                            onClick={() => {scrollToSection(aboutRef)}}
+                        >
+                            About
+                        </button>
+                    </li>
+                    <li className="pb-2" >
+                        <button 
+                            className="hover:translate-x-8"
+                            onClick={() => {scrollToSection(expRef)}}
+                        >
+                                Experience
+                        </button>
+                    </li>
+                    <li className="pb-2">
+                        <button 
+                            className="hover:translate-x-8"
+                            onClick={() => {scrollToSection(projRef)}}
+                        >
+                            Projects
+                        </button>
+                    </li>
                 </ul>
                 <ul className="ml-1 mt-48 flex items-center">
                     <li className="pr-4">
