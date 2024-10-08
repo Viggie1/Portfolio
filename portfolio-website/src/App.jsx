@@ -12,13 +12,12 @@ function App() {
   const expRef = useRef(null);
   const projRef = useRef(null);
 
-  const scrollToSection = (ref, offset = 50) => {
-    const topPosition = ref.current.getBoundingClientRect().top + window.scrollY - offset; 
-    console.log(topPosition)
-    if(ref && ref.current) {
-      window.scrollTo({ top: topPosition, behavior: 'smooth' })
-    }
+  const refs = {
+    about: aboutRef,
+    experience: expRef,
+    projects: projRef
   }
+
 
   return (
     <>
@@ -26,10 +25,7 @@ function App() {
         <div className="flex flex-row justify-center mx-auto w-full max-w-7xl">
           <div className="flex flex-col justify-start w-2/5 mt-40">
             <Sidebar
-              aboutRef={aboutRef} 
-              expRef={expRef}
-              projRef={projRef}
-              scrollToSection={scrollToSection}
+              refs={refs}
             />
           </div>
           <div className="w-3/5 mt-48 mb-36" ref={aboutRef}>
