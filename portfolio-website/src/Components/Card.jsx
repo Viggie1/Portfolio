@@ -12,8 +12,8 @@ function Card(props) {
                     <h1 className="text-2xl">{props.title}</h1>
                     <h1 className="text-xs">{props?.company}</h1>
                     <p className="pt-2">{props.description}</p>
-                    <ul className="flex flex-column pt-4">
-                        {techList?.map(tech => <li className="pr-2">{tech}</li>)}
+                    <ul className="flex flex-column flex-wrap gap-x-2 gap-y-2 pt-4">
+                        {techList?.map(tech => <li className="pr-2 py-1 px-2 border rounded-full whitespace-nowrap">{tech}</li>)}
                     </ul>
                 </a>
             </div>

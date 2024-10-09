@@ -67,7 +67,9 @@ function App() {
                                     customization requests and ensuring functionality met their needs. My role spanned 
                                     developing both frontend and backend solutions for a variety of educational tools.
                                     " 
-                      technologies={["JavaScript", "React.js", "HTML"]}
+                      technologies={["HTML", "CSS", "JavaScript", "Python", "React.js", "React Redux", "Express.js",
+                                     "PostgresSQL", "Django", "AWS", "Docker"
+                      ]}
                       link={'https://techrangers.cdl.ucf.edu/'}
                     />
                   </ol>
@@ -83,28 +85,49 @@ function App() {
                       <Card 
                         date="Oct 2024" 
                         title="Saverr" 
-                        description="app for keeping track of savings"
-                        technologies={["JavaScript", "React.js", "HTML"]}
+                        description="
+                          In order to keep myself accountable of spending and also help out when it came to deals,
+                          I sought out to create an application that keeps track of items I want to purchase. Not only is
+                          it a simple item tracker, but it also is set to send notifications when these items go on sale
+                          in efforts to save myself money and keep my spending in check.  
+                        "
+                        technologies={["Java", "Spring Boot", "JavaScript", "React.js", "React Native", "PostgresSQL", "Docker"]}
+                        link={'https://github.com/Viggie1/Saverr'}
                       />
                     </li>
                     <li className="pt-10">
                       <Card 
                         date="May 2024" 
                         title="KnightroGrade"  
-                        description="code submission and grading tool"
-                        technologies={["JavaScript", "React.js", "HTML"]}
+                        description="
+                          An application that solved the issue of a poorly implemented code submission tool previously
+                          used by my alma mater. Four other alumni and myself created a new code submission and grading tool
+                          that seamlessly integrated with professor's classes. Additionally, our application presented new 
+                          features that made the user experience and capability better.
+                        "
+                        technologies={["JavaScript", "React.js", "Express.js", "PostgresSQL", "GCP", "AWS", "Docker"]}
+                        link={'https://github.com/ASchrader319/CSGS'}
                       />
                     </li>
                     <li className="pt-10">
                       <Card 
                         date="Aug 2023" 
                         title="Between Shows" 
-                        description="letterboxd thingy "
-                        technologies={["JavaScript", "React.js", "HTML"]}
+                        description="
+                          In an effort to keep track of what shows everyone was watching, my friends and I created
+                          an application where we can all post shows we've watched, our ratings, and if we'd recommend them
+                          to each other. This included personal profiles, friendlist capabilities, interaction capabilities, 
+                          and a recommendation system.
+                        "
+                        technologies={["JavaScript", "React.js", "React Native", "Express.js", "MongoDB", "Docker"]}
+                        link={'https://github.com/nizolnier/betweenshows'}
                       />
                     </li>
                   </ol>
               </nav>
+              <div className="pt-10">
+                <p>View more on my <a href="https://github.com/Viggie1" target="_blank" className="underline">Github</a>!</p>
+              </div>
             </div>
           </div>
         </div>
