@@ -50,9 +50,9 @@ function Sidebar({ refs }) {
     return (
         <>
             <div className="sticky top-44">
-                <h1 className="text-4xl font-bold">Evangelos Kontonotas</h1>
-                <p className="text-2xl pt-2 pb-8">Software Engineer</p>
-                <ul className="text-lg">
+                <h1 className="text-4xl font-bold text-center md:text-left">Evangelos Kontonotas</h1>
+                <p className="text-2xl pt-2 pb-8 text-center md:text-left">Software Engineer</p>
+                <ul className="text-lg flex flex-col items-center md:items-start">
                     {Object.keys(refs).map((key) => (
                         <li key={key} className="group flex items-center pb-2">
                             <a 
@@ -67,11 +67,10 @@ function Sidebar({ refs }) {
                             >
                                 {key.charAt(0).toUpperCase() + key.slice(1)}
                             </a>
-
                         </li>
                     ))}
                 </ul>
-                <ul className="ml-1 mt-48 flex items-center">
+                <ul className="ml-1 mt-48 flex items-center justify-center md:justify-start">
                     <li className="pr-4">
                         <a href="https://www.linkedin.com/in/evangelos-kontonotas-420ba723b/" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faLinkedin} size="2x"/>
@@ -89,10 +88,8 @@ function Sidebar({ refs }) {
                     </li>
                 </ul>
             </div> 
-        
         </>
     )
-
 }
 
 export default Sidebar;
