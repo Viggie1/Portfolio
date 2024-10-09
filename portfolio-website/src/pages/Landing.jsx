@@ -86,13 +86,15 @@ function Landing() {
                         date="Oct 2024" 
                         title="Saverr" 
                         description="
-                          In order to keep myself accountable of spending and also help out when it came to deals,
-                          I sought out to create an application that keeps track of items I want to purchase. Not only is
-                          it a simple item tracker, but it also is set to send notifications when these items go on sale
-                          in efforts to save myself money and keep my spending in check.  
+                            To manage my spending more effectively and stay informed about deals, I 
+                            developed Saverr, an application designed to track items I plan to purchase. 
+                            Beyond just an item tracker, Saverr notifies users when tracked items go on sale, 
+                            helping save money by encouraging smarter spending decisions. By automating deal 
+                            notifications, the app supports both accountability and financial awareness.
                         "
                         technologies={["Java", "Spring Boot", "JavaScript", "React.js", "React Native", "PostgresSQL", "Docker"]}
                         link={'https://github.com/Viggie1/Saverr'}
+                        inProgress={true}
                       />
                     </li>
                     <li className="pt-10">
@@ -100,10 +102,14 @@ function Landing() {
                         date="May 2024" 
                         title="KnightroGrade"  
                         description="
-                          An application that solved the issue of a poorly implemented code submission tool previously
-                          used by my alma mater. Four other alumni and myself created a new code submission and grading tool
-                          that seamlessly integrated with professor's classes. Additionally, our application presented new 
-                          features that made the user experience and capability better.
+                            As a response to the frustrations caused by the outdated and cumbersome code 
+                            submission tool used by our university, a team of four alumni and I developed a 
+                            more efficient and user-friendly solution. Our application seamlessly integrates 
+                            with professors' class structures, offering intuitive features for both students 
+                            and faculty. In addition to improving submission workflows, we introduced new 
+                            capabilities that enhanced the overall user experience. Our MVP has been well 
+                            received, and the university is currently in discussions to deploy it on their 
+                            servers.
                         "
                         technologies={["JavaScript", "React.js", "Express.js", "PostgresSQL", "GCP", "AWS", "Docker"]}
                         link={'https://github.com/ASchrader319/CSGS'}
@@ -114,10 +120,12 @@ function Landing() {
                         date="Aug 2023" 
                         title="Between Shows" 
                         description="
-                          In an effort to keep track of what shows everyone was watching, my friends and I created
-                          an application where we can all post shows we've watched, our ratings, and if we'd recommend them
-                          to each other. This included personal profiles, friendlist capabilities, interaction capabilities, 
-                          and a recommendation system.
+                            To make it easier for my friends and me to keep track of the shows we were 
+                            watching, we developed an application that allows users to share shows they've
+                            watched, rate them, and recommend them to others. The platform features personal 
+                            profiles, a friends list, and interactive capabilities for sharing and discussing 
+                            reviews. We also implemented a recommendation system to help users discover new 
+                            shows based on their friends' ratings and preferences.
                         "
                         technologies={["JavaScript", "React.js", "React Native", "Express.js", "MongoDB", "Docker"]}
                         link={'https://github.com/nizolnier/betweenshows'}
