@@ -1,8 +1,8 @@
-/*import Sidebar from "./Components/Sidebar"
-import Card from "./Components/Card"
+import Sidebar from "../Components/Sidebar"
+import Card from "../Components/Card"
 import { useRef, useEffect } from "react"
 
-function App() {
+function Landing() {
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -76,7 +76,7 @@ function App() {
               </nav>
             </div>
             <div className="pt-10">
-              <p>View Full <a href="https://www.google.com" target="_blank" className="underline">Resume</a></p>
+              <p>View Full <a href="/resume" target="_blank" className="underline">Resume</a></p>
             </div>
             <div className="mt-24" ref={projRef}>
               <nav>
@@ -136,22 +136,4 @@ function App() {
   )
 }
 
-export default App*/ 
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Resume from './pages/Resume';
-import Landing from './pages/Landing';
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        {/* Other routes */}
-        <Route path="/" element={<Landing />} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
+export default Landing;
