@@ -21,13 +21,13 @@ function Landing() {
   return (
     <>
       <div className="min-h-screen bg-green-700 text-white">
-        <div className="flex flex-col lg:flex-row justify-center mx-auto w-full max-w-7xl">
-          <div className="w-full lg:w-2/5 mt-10 lg:mt-40">
+        <div className="flex flex-col xl:flex-row justify-center mx-auto w-full max-w-7xl">
+          <div className="w-full xl:w-2/5 mt-10 xl:mt-40">
             <Sidebar refs={refs} />
           </div>
-          <div className="w-full lg:w-3/5 mt-12 lg:mt-48 mb-36 px-4 lg:px-0" ref={aboutRef}>
+          <div className="w-full xl:w-3/5 mt-12 xl:mt-48 mb-36 px-4 xl:px-0" ref={aboutRef}>
             <div>
-              <p className="text-base lg:text-lg text-left">
+              <p className="text-base xl:text-lg text-left">
                 <section>
                   After initially pursuing Mechanical Engineering, I discovered my passion for coding and took a leap, 
                   switching universities to study Computer Science. Today, I'm a Computer Science graduate who has 
